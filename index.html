@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a music player website">
+    <title>Music player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="./images/cross.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="120" src="./images/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="./images/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="./images/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="./images/playlist.svg" alt="playlist">
+                    <h2>Your Playlist</h2>
+                </div>
+                <div class="song-list">
+                    <ul>
+                        <!-- Songs will be dynamically added here -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span data-encore-id="type">Safety Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+
+                    <div class="flex-hamburger">
+                        <img width="40" class="hamburger invert" src="./images/hamburger.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#ffffff" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#ffffff" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signup-btn">Sign up</button>
+                    <button class="login-btn">Log in</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1>Playlist</h1>
+                <div class="card-container">
+
+                    <!-- card 1st  -->
+                    <div data-folder="happy" class="card">
+                        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <!-- card 2nd  -->
+                    <div data-folder="Arijit-singh" class="card">
+                        <img src="https://c.saavncdn.com/editorial/Let_sPlayArijitSinghHindi_20230825050128_500x500.jpg"
+                            alt="">
+                        <h2>Arijit Singh!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <!-- card 3rd  -->
+                    <div data-folder="Darshan-Raval" class="card">
+
+                        <img class="play-image" width="100" height="190"
+                            src="https://i.scdn.co/image/ab67616100005174e1e00861cdb6bf56b14a1118" alt="">
+                        <h2>Darshan Raval!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <!-- card 4th  -->
+
+                    <div data-folder="Atif-Aslam" class="card">
+                        <img height="190" src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="">
+                        <h2>Atif Aslam</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <div data-folder="Silent-hits" class="card">
+                        <img height="190" src="https://i2o.scdn.co/image/ab67706c0000cfa3db57d46c1ca65e3fac2540dd"
+                            alt="">
+                        <h2>Silent Hits!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <div data-folder="phonk" class="card">
+                        <img height="190" class="imgwidth" src="https://i.scdn.co/image/ab67706f000000028a9e50e6e634a604fa545f72"
+                            alt="">
+                        <h2>Phonk!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <div data-folder="yo-yo-honey-singh" class="card">
+                        <img height="190" class="imgwidth" src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f"
+                            alt="">
+                        <h2>Yo Yo Hit!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <div data-folder="old-new-version" class="card">
+                        <img height="190" class="imgwidth" src="https://i.scdn.co/image/ab67616d00001e02168b0419d4bc2abeb2548832"
+                            alt="">
+                        <h2>Old new version!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                    <div data-folder="kk" class="card">
+                        <img height="190" class="imgwidth" src="https://i.scdn.co/image/ab67616100005174b09a31f853166e721d4d46b2"
+                            alt="">
+                        <h2>KK Hits!</h2>
+                        <p>Hits to boost your mood</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="playbar">
+                
+                <div class="songbtn">
+                    <div class="songinfo">No song playing</div>
+                    <img width="30" id="previousButton" class="invert" src="./images/previous.svg" alt="previous">
+                    <img width="30" id="playButton" class="invert" src="./images/play.svg" alt="play">
+                    <img width="30" id="nextButton" class="invert" src="./images/next.svg" alt="next">
+                    <img width="30" id="shuffleButton" class="invert shuffle" src="./images/shuffle.svg" alt="shuffle">
+                    <div class="volume">
+                        <img id="volumeButton" class="invert" src="./images/volume.svg" alt="volume">
+                        <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="progress"></div>
+                    <div class="circle"></div>
+                </div>
+                
+                <div class="songtime">0:00 / 0:00</div>
+                
+            </div>
+            
+
+
+
+
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
